@@ -21,6 +21,7 @@ def leak_memory
 
   puts "(After 100,000 1k object created in leak_memore. // pointers size #{ObjectSpace.memsize_of(pointers) / 1024}KB.)"
   usage
+  gc_stat
 
   50_000.times do
     Fiddle.free(pointers.pop)
@@ -38,6 +39,7 @@ puts "Start leak_memory"
 leak_memory
 
 usage
+gc_stat
 # RSS: 95460KB // ObjectSpace size 2352KB
 
 puts "Force Garbage Collection"
