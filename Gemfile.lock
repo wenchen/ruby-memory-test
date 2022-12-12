@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    fiddle (1.1.0)
+    memory_profiler (1.0.0)
+    mwrap (2.3.0)
+    ruby-prof (1.4.3)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  fiddle
+  memory_profiler
+  mwrap
+  ruby-prof
+
+BUNDLED WITH
+   2.3.22
